@@ -20,5 +20,4 @@ public class DBExample {
         }
         return conn;
     }
-
 }
