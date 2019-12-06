@@ -6,7 +6,6 @@ public class DBExample {
     private static Connection conn=null;
     //Constructor is setted to private to avoid further instances
     private DBExample(){ }
-
     public static DBExample getInstance(){
         return instance;
     }
@@ -16,7 +15,6 @@ public class DBExample {
                 Class.forName("com.mysql.jdbc.Driver");
                 conn=DriverManager.getConnection("jdbc:mysql://localhost/xx","root","pass123");
             }
-
         }catch (Exception e){
             e.printStackTrace();
         }
