@@ -1,15 +1,23 @@
+/**
+ * FactoryProducer class serves as an static platform to instantiate factories
+ * extended from {@link topic0.abstractFactory.factory.AbstractSQLFactory}.
+ *
+ * @author Felipe Pérez
+ * @version 1.0
+ *
+ */
 package topic0.abstractFactory.factory;
 
 public class FactoryProducer {
 
     public static AbstractSQLFactory getFactory(String sqlType){
-        if (sqlType.equalsIgnoreCase("MySQL")){
+        if (("mysql").equalsIgnoreCase(sqlType)){
             return new MySQLFactory();
-        }else if (sqlType.equalsIgnoreCase("MS-SQL")){
+        }else if (("ms-sql").equalsIgnoreCase(sqlType)){
             return new MSSQLFactory();
-        }else if (sqlType.equalsIgnoreCase("Oracle")){
+        }else if (("oracle").equalsIgnoreCase(sqlType)){
             return new OracleSQLFactory();
-        }else if (sqlType.equalsIgnoreCase("PostgreSQL")){
+        }else if (("postgresql").equalsIgnoreCase(sqlType)){
             return new PostgreSQLFactory();
         }
         return null;

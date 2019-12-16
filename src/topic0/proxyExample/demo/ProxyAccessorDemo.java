@@ -1,3 +1,10 @@
+/**
+ * ProxyAccessorDemo class serves as an application class to run and test the Proxy Pattern Design.
+ *
+ * @author Felipe Pérez
+ * @version 1.0
+ *
+ */
 package topic0.proxyExample.demo;
 
 import topic0.proxyExample.accesor.ProxyAccessor;

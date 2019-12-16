@@ -1,3 +1,10 @@
+/**
+ * DatabaseConnection is an entity that represents a SQL Connection.
+ *
+ * @author Felipe Pérez
+ * @version 1.0
+ *
+ */
 package topic0.builder;
 
 import topic0.builder.connectionItems.*;
@@ -14,6 +21,15 @@ public class DatabaseConnection {
     private Connection connection;
     Logger log= Logger.getLogger(DatabaseConnection.class.getName());
 
+    /**
+     * Establish an user for the database.
+     * Creates the required elements for establishing the connection and add them to the object.
+     *
+     * @param username a String containing the username.
+     * @param password a String containing the user's password.
+     * @param address a String containing the address that the user wants to connect to.
+     * @since 1.0
+     */
     public void establishUser(String username, String password, String address){
         if (data.isEmpty()){
             User user=new User(username);
@@ -30,6 +46,12 @@ public class DatabaseConnection {
         }
     }
 
+    /**
+     * Attempt to connect to the required database, it will failed since it is only a mock.
+     *
+     * @throws SQLException
+     * @since 1.0
+     */
     public void connect() throws SQLException {
         log.info("Connecting...");
         try{

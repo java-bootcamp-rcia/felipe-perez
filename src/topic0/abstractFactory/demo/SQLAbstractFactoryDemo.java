@@ -1,3 +1,11 @@
+/**
+ * SQLAbstractFactoryDemo class serves as an application class, it'll be used to run and test the functionality
+ * of each of the {@link topic0.abstractFactory.factory.AbstractSQLFactory} extended classes.
+ *
+ * @author Felipe Pérez
+ * @version 1.0
+ *
+ */
 package topic0.abstractFactory.demo;
 import topic0.abstractFactory.factory.*;
 import topic0.abstractFactory.sql.*;

@@ -1,3 +1,11 @@
+/**
+ * OracleSQLAccessor class uses {@link topic0.proxyExample.accesor.DatabaseAccessor} interface.
+ * It represents a Data Accessor for Oracle Database external dependencies.
+ *
+ * @author Felipe Pérez
+ * @version 1.0
+ *
+ */
 package topic0.proxyExample.accesor;
 
 import java.sql.*;
@@ -7,6 +15,15 @@ public class OracleSQLAccessor implements DatabaseAccessor {
     Connection conn;
     Logger log= Logger.getLogger(OracleSQLAccessor.class.getName());
     Statement statement;
+
+    /**
+     * Connects to database
+     * @param username A String object containing the user's name.
+     * @param password A String object containing the user's password.
+     * @param url      A String object containing the url that the user's attempting to connect.
+     * @return true.
+     * @throws SQLException
+     */
     @Override
     public boolean connect(String username, String password, String url) throws SQLException {
         log.info("Connecting to a Oracle SQL database");
@@ -15,6 +32,12 @@ public class OracleSQLAccessor implements DatabaseAccessor {
         return true;
     }
 
+    /**
+     * Executes the data set for the given query.
+     * @param query A String object containing the query that should be executed.
+     * @return true.
+     * @throws SQLException
+     */
     @Override
     public boolean executeDataSet(String query)throws SQLException {
         log.info("Reading data set from an Oracle SQL database");

@@ -1,3 +1,10 @@
+/**
+ * DBExampleTest serves as an application class, it will be use to run and test DBExample{@link topic0.singleton.DBExample} class functionality.
+ *
+ * @author Felipe Pérez
+ * @version 1.0
+ *
+ */
 package topic0.singleton;
 import java.sql.*;
 public class DBExampleTest {
