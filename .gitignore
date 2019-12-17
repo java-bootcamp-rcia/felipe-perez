@@ -7,3 +7,4 @@ out/
 .idea_modules/
 
 *.iml
+*.class
