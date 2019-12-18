@@ -5,6 +5,6 @@
 out/
 .idea/
 .idea_modules/
-
 *.iml
 *.class
+target/
